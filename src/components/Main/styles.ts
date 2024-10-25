@@ -19,7 +19,19 @@ export const Container = styled.main`
     padding: 0 4rem;
   }
 
-  @media(max-width: 360px){
+    @media (max-width: 768px) {
     padding: 0 2rem;
+  }
+
+  @media (max-width: 576px) {
+    padding: 0 1.5rem; /* Reduce the padding further for smaller screens */
+  }
+
+  @media (max-width: 360px) {
+    padding: 0 1rem; /* Adjust padding for very small screens */
+  }
+      @media (max-width: 320px) {
+    padding: 0 0.5rem; /* Even smaller padding for narrow screens */
+    font-size: 80%;  /* Scale font size down further */
   }
 `
